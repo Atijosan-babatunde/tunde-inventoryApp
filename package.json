@@ -4,7 +4,8 @@
   "license": "MIT",
   "scripts": {
     "start-angular": "npx nx serve angular-form",
-    "start-react": "npx nx serve react-dashboard"
+    "start-react": "npx nx serve react-dashboard",
+    "build":"cd apps/angular-dashboard && ng build"
   },
   "private": true,
   "dependencies": {
