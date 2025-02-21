@@ -3,9 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start-angular": "npx nx serve angular-form",
-    "start-react": "npx nx serve react-dashboard",
-    "build":"cd apps/angular-dashboard && ng build"
+    "start-angular": "node init && npx nx serve angular-form",
+    "start-react": "node init && npx nx serve react-dashboard"
   },
   "private": true,
   "dependencies": {
