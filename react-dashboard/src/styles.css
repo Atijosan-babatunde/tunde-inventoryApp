@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "br-regular";
+  src: url(../src/app/components/font/BR\ Firma\ Regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "br-regular-italic";
+  src: url(../src/app/components/font/BR\ Firma\ Regular\ Italic.otf.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "br-light";
+  src: url(../src/app/components/font/BR\ Firma\ Light.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "br-bold";
+  src: url(../src/app/components/font/BR\ Firma\ Bold.otf.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "br-semibold";
+  src: url(../src/app/components/font/BR\ Firma\ SemiBold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "br-bold-italic";
+  src: url(../src/app/components/font/BR\ Firma\ Bold\ Italic.otf.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "br-thin";
+  src: url(../src/app/components/font/BR\ Firma\ Thin.otf) format("opentype");
+}
+
+.gradient-text {
+  background-image: linear-gradient(to right, #4c1ef5, #b81ef5);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.gradient-border {
+  border: 2px solid;
+  border-image-slice: 1;
+  border-width: 2px;
+  border-image-source: linear-gradient(to right, #4c1ef5, #b81ef5);
+}
+
+.background-gradient {
+  background: linear-gradient(to bottom, #4c1ef5, #b81ef5);
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 1px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #070105 !important;
+  border-radius: 40px !important;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent !important;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input-focus-border:focus {
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #4c1ef5, #b81ef5) 1;
+  border-image-slice: 1;
+  border-radius: 5px;
+  background-color: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 1px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #4c1ef5, #b81ef5) !important;
+  border-radius: 40px !important;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent !important;
+}

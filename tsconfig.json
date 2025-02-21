@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "lib": ["es2015", "dom"]
+  },
+  "extends": "./tsconfig.base.json"
+}

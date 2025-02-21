@@ -1,0 +1,140 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #04010F;
+    background-size: cover;
+  }
+  
+  .login-container .login-background {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+  
+  .login-container .login-background .text-container {
+    background: #111827;
+    padding: 7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  .login-container .login-background .text-container h1 {
+    font-family: Gotham;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 10px;
+    letter-spacing: 0.02em;
+    text-align: center;
+  }
+  
+  .login-container .login-background .text-container .app-name {
+    font-family: Gotham;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.73px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    width: 428px;
+  }
+  
+  .login-container .login-background .text-container .sub-text {
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 11.48px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-top: 3em;
+  }
+  
+  .login-container .login-background .login-form {
+    width: 501px;
+    height: 450px;
+    background-color: #fff;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(78, 77, 77, 0.5);
+    position: relative;
+  }
+  
+  .login-container .login-background .login-form .z-logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 2.5rem;
+  }
+  
+  .login-container .login-background .login-form .z-logo img {
+    margin-bottom: 1rem;
+  }
+  
+  .login-container .login-background .login-form h2 {
+    font-size: 22px;
+    color: rgba(12, 21, 73, 1) 333;
+    font-family: Inter;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: left;
+  }
+  
+  .login-container .login-background .login-form p {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  
+  .login-container .login-background .login-form .icon-container {
+    position: absolute;
+    top: 2.5rem;
+    left: 0.5rem;
+  }
+  
+  .login-container .login-background .login-form .lock-container {
+    position: absolute;
+    top: 2.3rem;
+    left: 0.5rem;
+  }
+  
+  .login-container .login-background .login-form input {
+    padding-left: 2rem;
+  }
+  
+  .login-container .login-background .password-input {
+    position: relative;
+  }
+  
+  .login-container .login-background .show_password {
+    text-align: right;
+    position: absolute;
+    top: 2.3rem;
+    right: 0.5rem;
+  }
+  
+  .login-container .login-background .login-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    text-align: center;
+    background-color: #2563eb;
+  }
+  
+  .login-container .password-toggle {
+    font-family: "Material Icons", sans-serif;
+    font-size: 24px;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  

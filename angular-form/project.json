@@ -1,0 +1,86 @@
+{
+  "name": "angular-form",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "prefix": "app",
+  "sourceRoot": "angular-form/src",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:application",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/angular-form",
+        "index": "angular-form/src/index.html",
+        "browser": "angular-form/src/main.ts",
+        "polyfills": ["zone.js"],
+        "tsConfig": "angular-form/tsconfig.app.json",
+        "assets": [
+          {
+            "glob": "**/*",
+            "input": "angular-form/public"
+          }
+        ],
+        "styles": ["angular-form/src/styles.css"],
+        "scripts": [],
+        "server": "angular-form/src/main.server.ts",
+        "ssr": {
+          "entry": "angular-form/src/server.ts"
+        },
+        "outputMode": "server"
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "4kb",
+              "maximumError": "8kb"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "optimization": false,
+          "extractLicenses": false,
+          "sourceMap": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "buildTarget": "angular-form:build:production"
+        },
+        "development": {
+          "buildTarget": "angular-form:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "buildTarget": "angular-form:build"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "angular-form:build",
+        "staticFilePath": "dist/angular-form/browser",
+        "spa": true
+      }
+    }
+  }
+}
